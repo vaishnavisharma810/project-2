@@ -1,0 +1,239 @@
+/*CSS Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+/* :root{
+    --navbar-height: 59px;
+} */
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar : Logo and image */
+
+#logo{
+    margin: 10px 35px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/* list styling */
+#navbar{
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* opacity: 2; */
+}
+
+#navbar ul a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 578px;
+}
+#home::before{
+    content: "";
+    background: url("https://img.freepik.com/free-photo/programming-code-works-through-computer-screen-terminal-3d-illustration_250994-1966.jpg?size=626&ext=jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 5;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* Service Section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid ;
+    padding:34px ;
+    margin: 6px;
+    border-radius: 20px;
+    background-color: rgb(33, 37, 90);
+    color: azure;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Contact Section */
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px ;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box form{
+    width: 40%;
+    height: auto;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#contact{
+    position: relative;
+    content: "";
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.99;
+    color: black;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJ2UfhdS3wuW7y9VYN156fNru1CALSnMi9A&usqp=CAU") no-repeat center center/cover;
+}
+/* #contact::before{
+    
+} */
+#contact-box input{
+    width: 100%;
+    padding: 2px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 11px auto;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Client Section */
+
+#client-section{
+    height: 344px;
+}
+.client-item img{ 
+    height: 150px;
+    padding: 0px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    /* background: url("https://img.freepik.com/free-photo/programming-code-works-through-computer-screen-terminal-3d-illustration_250994-1966.jpg?size=626&ext=jpg") no-repeat center center/cover;  */
+    width: 100%;
+    height: 578px;
+    z-index: -1; 
+    opacity: 0.6;
+    
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+    padding: 34px;
+}
+
+/* utility class */
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: cursive;
+    /* margin-top: 10px; */
+    /* background-color: black; */
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: cursive;
+}
+.btn:hover{
+    background-color: brown;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: beige;
+    color: blue;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+    
+}
+
+
